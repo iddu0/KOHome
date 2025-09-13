@@ -31,7 +31,7 @@ function KOHome:sendAssistQuery(query)
     local json = require("json") 
 
     local token = "LONGLIVEDACCESSTOKEN" -- Put your Home Assistant Long Lived Access Token here
-    local url = "http://homeassistant.local:8123/api/conversation/process" -- Put your Home Assistant URL Here
+    local url = "http://homeassistant.local:8123/api/conversation/process" -- Put your Home Assistant URL Here (MAKE SURE IT ENDS WITH "/api/conversation/process"!!)
 
     local body = json.encode({ 
         text = query,
@@ -108,3 +108,4 @@ function KOHome:onKOHome()
 end
 
 return KOHome
+
