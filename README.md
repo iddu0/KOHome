@@ -1,7 +1,9 @@
 # KOHome
 A Plugin for KOReader to expose Home Assistant's Assist functionality, letting you use Assist while reading.
+
 ### Why?
 Say you are reading a book, and want to turn on a light, but do not want to reach for your phone to distract yourself from the amazing book you are reading. With KOHome, you can turn on that light without being distracted!
+
 ### Setup
 Here is how to setup this plugin:
 1. Click the green `<> Code` button on this page, and click "Download ZIP".
@@ -13,3 +15,7 @@ Here is how to setup this plugin:
 7. Back in your Code / Text editor, find the following lines: <br>`local token = "LONGLIVEDACCESSTOKEN"`<br>`local url = "http://homeassistant.local:8123/api/conversation/process"` and<br>`agent_id = "conversation.google_generative_ai"`. Replace "LONGLIVEDACCESSTOKEN" with the token you copied, "http://homeassistant.local:8123" with your Home Assistant URL, and "conversation.google_generative_ai" with the "agent_id" you copied.
 8. Save the file, and connect your KOReader device to your computer. Copy the `kohome.koplugin` directory from before to the `koreader/plugins` directory on your device.
 9. All done! Eject your device, and KOHome should be avalible in the Tools section of KOReader.
+
+### Notes:
+- This is my first time coding in Lua aside from some Roblox Game Dev! There may be some bugs!
+- This code was made with the help of AI. I DIDNT JUST COPY AND PASTE! I told it to teach me Lua and help me make this plugin.
